@@ -60,13 +60,18 @@
       .mains {
         width: 100%;
         /* margin-top: 60px; */
-      
+
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       }
-      .slide {
+      .slide{
         width: 100%;
         height: auto;
-        display: none;
+        /* display: none; */
+      }
+      .slides{
+        width: 100%;
+        height: auto;
+        /* display: none; */
       }
       .arrow {
         cursor: pointer;
@@ -86,22 +91,76 @@
       .prev {
         left: 10px;
       }
+      .array{
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 18px 19px;
+        border-radius: 50%;
+        font-size: 15%;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(20, 20, 20);
+      }
+      .nexto {
+        right: 10px;
+
+      }
+      .prevo {
+        left: 10px;
+      }
+      .arrows {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 18px 19px;
+        border-radius: 50%;
+        font-size: 15%;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(20, 20, 20);
+        /* padding: 10px; */
+      }
+      .nexts {
+        right: 10px;
+      }
+
+      .prevs {
+        left: 10px;
+      }
+
       .bottom{
-        display:flex;
+
         display:grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 440px;
-        
+        grid-template-rows: 390px;
+
         width:76%;
-        height:200px;
-      gap:10px;
-      margin-left: 190px; 
+
+      gap:20px;
+      margin-left: 190px;
       /* margin-right: 80px;  */
       }
       .bottom>div{
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         background-color:rgb(255,255,255);
       }
+      .bottom >div>:nth-child(1){
+        text-align:center;
+        margin:auto;
+       justify-content:space-between;
+
+      }
+      .bottom >div>:nth-child(2){
+        height:100px;
+        gap:15px;
+        text-align:center;
+        margin:auto;
+
+
+
+      }
+
       #bottom-1{
         width: 100%;
         margin-top: 80px;
@@ -114,16 +173,104 @@
         display:flex;
         display:grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 440px;
-        
-        width:76%;
-        height:200px;
-      gap:10px;
-      margin-left: 190px;
-        
+        grid-template-rows: 300px;
+        width:90%;
+      gap:20px;
+      margin-left: 90px;
+
+
       }
       .left>div{
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+      .left>div{
+       width:100%;
+
+      }
+      .left>div>:nth-child(1){
+       width:100%;
+       height:100%;
+
+      }
+      .video{
+        width:90%;
+        height:390px;
+
+        text-align:center;
+        margin:auto;
+      }
+       #reffer{
+        width:98%;
+        text-align:center;
+        margin :auto;
+        height:300px;
+        border-radius: 30px;
+
+      }
+      #reffer >:nth-child(1){
+       width:100%;
+       height:330px;
+       border-radius: 30px;
+      }
+      #clip{
+        width:100%;
+        height:600px;
+        background-color:rgb(40,40,40);
+        margin-top:120px;
+      }
+      #shopify{
+        display:flex;
+        width:100%;
+        height: 170px;
+
+
+      }
+
+      .sllides{
+        width: 100%;
+        height: auto;
+        display: none;
+      }
+      .bracket {
+        cursor: pointer;
+        position: absolute;
+        top: 5200px;
+        padding: 18px 19px;
+        border-radius: 50%;
+        font-size: 15%;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(20, 20, 20);
+        /* padding: 10px; */
+      }
+      .next {
+        right: 10px;
+      }
+
+      .array{
+        left: 10px;
+      }
+      #kit{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 360px;
+        width:90%;
+        gap:20px;
+        text-align: center;
+        margin:auto;
+      }
+      #kit >div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #care{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+       grid-template-rows:150px;
+       gap:20px;
+       width:40px;
+      }
+      #care >div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       }
     </style>
   </head>
@@ -171,7 +318,7 @@
           alt=""
         />
       </div>
-        <div class="slides"></div>
+      <div class="slides">
         <img
           src="https://d32baadbbpueqt.cloudfront.net/Homepage/91374506-cc05-46f3-aff6-86a00e501c38.gif"
           class="slide"
@@ -222,37 +369,909 @@
       </div>
 
       <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
-      <span class="arrow next"onclick="controller(1)">&#10095;</span>
+      <span class="arrow next" onclick="controller(1)">&#10095;</span>
     </div>
-      <div id="bottom-1">
-        <div>
-        <h2 style="text-align:center;padding-bottom:30px;padding-top:30px;color:white;">BESTSELLERS
+     
+    <div id="bottom-1">
+      <div>
+        <h2
+          style="
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            color: white;
+          "
+        >
+          BESTSELLERS
         </h2>
       </div>
-     <div class="bottom">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-     </div>
+      <div class="bottom">
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">999</h1>
+          </div>
+          <div>
+            <button
+            style="
+              background-color: black;
+              color: white;
+              padding: 5px;
+              padding-left:60px;
+              padding-right: 60px;
+              padding-top:10px;
+              padding-bottom: 10px;
+              font-size: 16px;
+             margin-top:16px;
+              border-radius: 10px; ;
+            "
+          >
+            ADD TO CART
+          </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_09f0cf83-792a-4185-8882-5e5e6909a459.jpg?v=1657814596"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">799</h1>
+          </div>
+          <div>
+            <button
+            style="
+              background-color: black;
+              color: white;
+              padding: 5px;
+              padding-left:60px;
+              padding-right: 60px;
+              padding-top:10px;
+              padding-bottom: 10px;
+              font-size: 16px;
+             margin-top:16px;
+              border-radius: 10px; ;
+            "
+          >
+            ADD TO CART
+          </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/424092031-1.jpg?v=1661529396"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">499</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">699</h1>
+          </div>
+          <div>
+            <button
+            style="
+              background-color: black;
+              color: white;
+              padding: 5px;
+              padding-left:60px;
+              padding-right: 60px;
+              padding-top:10px;
+              padding-bottom: 10px;
+              font-size: 16px;
+             margin-top:16px;
+              border-radius: 10px; ;
+            "
+          >
+            ADD TO CART
+          </button>
+          </div>
+          <!-- <span class="arrows prevs" onclick="controller(-1)">&#10094;</span>
+          <span class="arrows nexts" onclick="controller(1)">&#10095;</span> -->
+        </div>
+      </div>
     </div>
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -HOT DEALS-
+    </h2>
     <div class="left">
       <div>
-        <img srec=""alt="">
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/9ff42330-10cf-4e5b-8477-b7920671d908.jpg"
+          alt=""
+        />
       </div>
       <div>
-        <img srec=""alt="">
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/718df309-e89c-4086-b9e8-a89d74139c4e.jpg"
+          alt=""
+        />
       </div>
       <div>
-        <img srec=""alt="">
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/3d77c4bc-6e34-4cd1-a75c-94138fe69208.jpg"
+          alt=""
+        />
       </div>
     </div>
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -JUST IN-
+    </h2>
+    <!--  -->
+    <div class="bottom">
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/Monsoon-Makeup-Kit---WBG-Images_1_66ba2237-0dad-42dc-88ea-c2d45555dd6a.jpg?v=1657814549"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">999</h1>
+        </div>
+        <div>
+          <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">799</h1>
+        </div>
+        <div>
+          <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/2_d5e8f5f6-db6f-43d4-a1ac-1da7b22fdc1b.jpg?v=1652943021"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">499</h1>
+        </div>
+        <div>
+          <button
+          style="
+            background-color: black;
+            color: white;
+            padding: 5px;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+           margin-top:16px;
+            border-radius: 10px; ;
+          "
+        >
+          ADD TO CART
+        </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">699</h1>
+        </div>
+        <div>
+          <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+        </div>
+        <!-- <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span> -->
+      </div>
+    </div>
+
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -SHUKAR HAI, SUGAR HAI-
+    </h2>
+    <div class="video">
+      <div>
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/a6ab1591-874a-40d4-9851-09498c8122c1.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 170px;
+        padding-bottom: 50px;
+      "
+    >
+      -TOP PICKS OF THE WEEK-
+    </h2>
+    <div class="left">
+      <div>
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/c6e00b9a-2a4f-4348-82eb-31fc027fc251.gif"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/b67b1ce2-993c-4abc-b6ad-8e205212f80b.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/7911df62-32cc-4a2d-9c7b-ff0a81caeb01.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -GIFTING -
+    </h2>
+    <!--  -->
+
+    <div class="bottom">
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">999</h1>
+        </div>
+        <div>
+          <button
+          style="
+            background-color: black;
+            color: white;
+            padding: 5px;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+           margin-top:16px;
+            border-radius: 10px; ;
+          "
+        >
+          ADD TO CART
+        </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/04_b475d6dd-c07b-43b0-9f78-c989b2fe4f6d.jpg?v=1659446263"
+          />
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">799</h1>
+        </div>
+        <div>
+          <button
+          style="
+            background-color: black;
+            color: white;
+            padding: 5px;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+           margin-top:16px;
+            border-radius: 10px; ;
+          "
+        >
+          ADD TO CART
+        </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_09f0cf83-792a-4185-8882-5e5e6909a459.jpg?v=1657814596"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">499</h1>
+        </div>
+        <div>
+          <button
+          style="
+            background-color: black;
+            color: white;
+            padding: 5px;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+           margin-top:16px;
+            border-radius: 10px; ;
+          "
+        >
+          ADD TO CART
+        </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            style="width: 60%; height: 250px"
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1659517990"
+            alt=""
+          />
+          <p>Ace of Face Foundation Stick</p>
+          <p style="padding-top: 10px">16 Shades</p>
+          <h1 style="margin-top: 13px">699</h1>
+        </div>
+        <div>
+          <button
+          style="
+            background-color: black;
+            color: white;
+            padding: 5px;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+           margin-top:16px;
+            border-radius: 10px; ;
+          "
+        >
+          ADD TO CART
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -REFER YOUR FRIENDS -
+    </h2>
+    <div id="reffer">
+      <img
+        style="width: 98%"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/c807ee2f-ac79-46a4-ad99-eee353fec1f8.jpg"
+        alt=""
+      />
+    </div>
+    <div id="clip">
+      <h2
+        style="
+          color: white;
+          text-align: center;
+          margin: auto;
+          padding-top: 70px;
+          padding-bottom: 50px;
+        "
+      >
+        -SUPER SAVERS-
+      </h2>
+      <!--  -->
+      <div class="bottom">
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">999</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_73e85cb4-80d8-4eeb-ba32-deaf11c4483f.jpg?v=1658851292"
+            />
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">799</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lip-balm-sheet-mask-15782913671251.jpg?v=1619152222"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">499</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_ce9e0d25-5cd4-44a0-80cd-3856d9c7850d.jpg?v=1658937586"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+            <p style="padding-top: 10px">16 Shades</p>
+            <h1 style="margin-top: 13px">699</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adarsh -->
+
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -NEWLY LAUNCHED -
+    </h2>
+    <div id="shopify">
+      <div>
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/89e51326-1363-44e1-94f1-d5bd00bd2ca9.gif"
+          alt=""
+          class="sllides"
+        />
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/f190c764-84cf-4eea-a381-8b701be65852.gif"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/730cf92b-3d4a-4d08-bed8-db88e7911f32.jpg"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/a1ea3283-9593-4f1c-8e6b-70c3a5062c37.jpg"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/37471559-27d1-4509-9e31-29d889be7036.jpg"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/6985f902-c3fe-4a20-bc76-1658a9109fd1.jpg"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/f190c764-84cf-4eea-a381-8b701be65852.gif"
+          alt=""
+          class="sllides"
+        />
+
+        <img
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/6985f902-c3fe-4a20-bc76-1658a9109fd1.jpg"
+          alt=""
+          class="sllides"
+        />
+      </div>
+      <span class="bracket array" onclick="control(-1)">&#10094;</span>
+      <span class="bracket next" onclick="control(1)">&#10095;</span>
+    </div>
+
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 250px;
+        padding-bottom: 50px;
+      "
+    >
+      -THIS OR THAT -
+    </h2>
+    <div id="kit">
+      <div>
+        <img
+          style="width: 100%"
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/d1b038a4-418a-4309-92b1-9aff3b4393ea.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          style="width: 100%"
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/984514b9-81c3-4e2a-922e-7b18f42ef77f.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <h2
+      style="
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      "
+    >
+      -SKINCARE BASICS -
+    </h2>
+
+    <!-- <div id="bottom-1">
+      <div>
+        <h2
+          style="
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            color: white;
+          "
+        >
+          BESTSELLERS
+        </h2>
+      </div> -->
+      <div class="bottom">
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/CCLipScrubWBG-3.jpg?v=1628610315"
+              alt=""
+            />
+            <p>Coffee Culture Lip Scrub</p>
+           
+            <h1 style="margin-top: 13px">299</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-cleansing-balm-stick-01.jpg?v=1643375708"
+              alt=""
+            />
+            <p>Coffee Culture Cleansing Balm Stick</p>
+           
+            <h1 style="margin-top: 13px">699</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730"
+              alt=""
+            />
+            <p>Aquaholic Hyaluronic Serum</p>
+           
+            <h1 style="margin-top: 13px">499</h1>
+          </div>
+          <div>
+            <button
+            style="
+              background-color: black;
+              color: white;
+              padding: 5px;
+              padding-left:60px;
+              padding-right: 60px;
+              padding-top:10px;
+              padding-bottom: 10px;
+              font-size: 16px;
+             margin-top:16px;
+              border-radius: 10px; ;
+            "
+          >
+            ADD TO CART
+          </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              style="width: 60%; height: 250px"
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+              alt=""
+            />
+            <p>Ace of Face Foundation Stick</p>
+           
+            <h1 style="margin-top: 13px">599</h1>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 5px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+               margin-top:16px;
+                border-radius: 10px; ;
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <span class="arrows prevs" onclick="controller(-1)">&#10094;</span>
+          <span class="arrows nexts" onclick="controller(1)">&#10095;</span>
+        </div>
+      </div>
+    </div>
+
+    <h2
+    style="
+      text-align: center;
+      margin: auto;
+      padding-top: 70px;
+      padding-bottom: 50px;
+    "
+  >
+    -SUGAR BEAUTY BLOG -
+  </h2>
+
+     <div id="care">
+      <div></div>
+      <div></div>
+      <div></div>
+     </div>
   </body>
   <script>
     let flag = 0;
 
     function controller(x) {
-      flag=flag+x;
+      flag = flag + x;
       slideshow(flag);
     }
     slideshow(flag);
@@ -260,20 +1279,44 @@
     function slideshow(num) {
       let slides = document.getElementsByClassName("slide");
       console.log(slides);
-      if(num==slides.length){
-        flag=0;
-        num=0;
+      if (num == slides.length) {
+        flag = 0;
+        num = 0;
       }
-       if(num < 0){
-        flag=slides.length-1;
-        num=slides.length-1;
+      if (num < 0) {
+        flag = slides.length - 1;
+        num = slides.length - 1;
       }
 
-      
-      for(let y of slides){
-        y.style.display="none";
+      for (let y of slides) {
+        y.style.display = "none";
       }
-      slides[num].style.display="block";
+      slides[num].style.display = "block";
+    }
+    let flags = 0;
+
+    function control(z) {
+      flags = flags + z;
+      slideshows(flags);
+    }
+    slideshows(flags);
+
+    function slideshows(ele) {
+      let sllides = document.getElementsByClassName("sllides");
+      console.log(sllides);
+      if (ele == sllides.length) {
+        flags = 0;
+        ele = 0;
+      }
+      if (ele < 0) {
+        flags = sllides.length - 1;
+        num = sllides.length - 1;
+      }
+
+      for (let y of sllides) {
+        y.style.display = "none";
+      }
+      sllides[ele].style.display = "block";
     }
   </script>
 </html>
