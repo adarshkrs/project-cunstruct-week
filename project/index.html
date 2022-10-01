@@ -275,8 +275,53 @@
        
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       }
-      
-      
+      .brackets {
+        cursor: pointer;
+        position: absolute;
+        top: 7200px;
+        padding: 18px 19px;
+        border-radius: 50%;
+        font-size: 15%;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(20, 20, 20);
+        /* padding: 10px; */
+      }
+      .nexts {
+        right: 8px;
+      }
+
+      .arrays{
+        left: 22px;
+      }
+      .slider{
+        margin:auto;
+        text-align:center;
+       width:98%;
+       height:auto;
+       display:none;
+      }
+      .last{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 150px;
+        gap:20px;
+        width:90%;
+        margin:auto;
+        text-align:center;
+      }
+       .last >div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+       }
+       #email{
+        width:30%;
+        height:30px;
+        background-color:white;
+        margin-left:30px;
+        margin:auto;
+        text-align:center;
+       }
     </style>
   </head>
   <body>
@@ -1284,11 +1329,12 @@
      style="
        text-align: center;
        margin: auto;
-       padding-top: 70px;
+       padding-top: 180px;
        padding-bottom: 50px;
      "
    >
      -QUICK TIPS
+
      -
    </h2>
 
@@ -1302,7 +1348,49 @@
       <div>
         <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/7fcf7da7-9d0b-4e1a-b09e-e075825bc9ad.jpg" alt="" class="slider"/>
       </div>
+      <span class="brackets arrays" onclick="myfunction(-1)">&#10094;</span>
+      <span class="brackets nexts" onclick="myfunction(1)">&#10095;</span>
      </div>
+
+     <h2
+     style="
+       text-align: center;
+       margin: auto;
+       padding-top: 100px;
+       padding-bottom: 50px;
+     "
+   >
+     -EXPLORE
+     -
+   </h2>
+
+      <div class="last">
+        <div>
+          <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/cba32bfe-cbf9-47f9-b27c-823272a94828.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/52feec2f-892b-4fad-b344-ff9fcb7e8bb1.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/950b18e9-a454-48ce-8787-fe4c7517eaec.jpg" alt="" />
+        </div>
+        <div>
+          <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/728e405c-d932-43df-8b82-f6a51421fdfa.jpg" alt="" />
+        </div>
+      </div>
+      <hr style="margin-top:130px;">
+
+      <h2  style="margin-left:50px;margin-top:40px;">READ MORE ABOUT SUGAR COSMETICS</h2>
+        
+      <h2 style="margin:auto;text-align:center;margin-top:60px">LET’S STAY IN TOUCH</h2>
+
+      <p style="margin:auto;text-align:center;margin-top:14px;">Get the latest beauty tips straight to your inbox. Can’t wait to connect!</p>
+
+      <form style="margin:auto;text-align:center;color:black">
+        <input type="text" placeholder="Enter you Email" id="email">
+      </form>
+
+
   </body>
   <script>
     let flag = 0;
@@ -1355,5 +1443,31 @@
       }
       sllides[ele].style.display = "block";
     }
+
+    let count=0;
+    function myfunction(a){
+      count=count+a;
+      slider(count)
+      
+    }
+    function slider(elem){
+    let slider=document.getElementsByClassName("slider");
+    console.log(slider);
+
+    if(elem==slider.length){
+      count=0;
+      elem=0;
+
+    }
+    if(elem < 0){
+      count=slider.length-1;
+      elem=slider.length - 1;
+    }
+    for(let b of slider){
+         b.style.display="none";
+         slider[elem].style.display="block";
+    }
+    }
+      
   </script>
 </html>
