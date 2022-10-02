@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <tittle>Rejister page</tittle>
+    <style>
+      #rejister {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 800px;
+        width: 100%;
+        gap: 5px;
+      }
+      #rejister > div {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #mobile {
+        width: 40%;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rejister">
+      <div>
+        <img
+          style="width: 100%; height: 800px"
+          src="https://media.sugarcosmetics.com/upload/authSIe2.jpg"
+          alt=""
+        />
+      </div>
+      <div
+        style="
+          margin: auto;
+          text-align: center;
+          background-color: rgb(242, 242, 242);
+          width: 100%;
+          height: 700px;
+        "
+      >
+        <img src="https://media.sugarcosmetics.com/upload/Hi!.png" alt="" />
+        <h2>Login/Sign Up Using Phone</h2>
+        <input type="text" placeholder="+91" id="mobile" />
+
+        <p>
+          Registering for this site allows you to access your order status and
+          history. Just fill in the above fields, and we'll get a new account
+          set up for you in no time. We will only ask you for information
+          necessary to make the purchase process faster and easier.
+        </p>
+        <button style="padding: 15px 10px 14px 16px" onClick="myFunction()">
+          SEND OTP
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let button = document.querySelector("button");
+    function myFunction() {
+      document.getElementById("mobile").value;
+    }
+    console.log(mobile);
+  </script>
+</html>
